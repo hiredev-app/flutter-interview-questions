@@ -1,52 +1,99 @@
 # yaml-language-server: $schema=https://webscope-hiring.herokuapp.com/api/questions-schema/
 questions:
-  # This is an example of a single choice question
-  - title: Who was the captain in the first pilot episode of the original Star Trek Series?
+  - title: What even is Flutter?
     type: single_choice
-    hint: His name rhymes with "bike"
     options:
-      - value: Captain America
+      - value: A framework
         correct: true
-      - value: Christopher Pike
-      - value: This is a new answer
-      - value: Christopher Columbus
-    body: |
-      Here is some JavaScript code:
-      ~~~js
-      console.log('It works!');
-      ~~~
+      - value: A plugin
+      - value: An IDE
+      - value: An interface for deploying mobile apps
 
-      And here is another:
-
-      ~~~js
-      console.log('It works again!');
-      ~~~
-    # This is an example of a multi choice question
-  - title: Which of these characters from Game of Thrones series died?
+  - title: What platforms can you develop for using Flutter?
     type: multi_choice
-    hint: There was a lot of dying...
     options:
-      - value: Sersei Lannister
+      - value: iOS
         correct: true
-      - value: Robb Stark
+      - value: Android
         correct: true
-      - value: Hodor
+      - value: Apple WatchOS
+      - value: Linux
+        correct: true
+      - value: MacOS
+        correct: true
+      - value: Windows Phone
+      - value: Web Apps
+        correct: true
 
-  # This is an example of a full-text question (answers for full-text-questions are optional)
-  - title: If you store a pokemon in a PC does it become a digimon?
+  - title: What is the building block of every Flutter UI?
+    type: single_choice
+    options:
+      - value: Container
+      - value: States
+      - value: Widget
+        correct: true
+      - value: Scaffold
+
+  - title: What is MVVM and why do we use it?
+    type: multi_choice
+    options:
+      - value: To get rid of excess code
+      - value: To separate UI logic from the UI itself
+        correct: true
+      - value: To have less files in repository
+      - value: To increase code clarity and other practical purposes
+        correct: true
+
+  - title: Have you worked with MVVM? Is it good practice to always use it? When is it, and when it isn't?
     type: full_text
 
-  # This is an example of a question with body
-  - title: If you store a pokemon in a PC does it become a digimon?
-    type: full_text
+  - title: Which of these code snippets is a approved way of creating a string variable?
+    type: multi_choice
+    options:
+      - value: A
+      - value: B
+        correct: true
+      - value: C
+        correct: true
+      - value: D
     body: |
-      Here is some JavaScript code:
+      A:
       ~~~js
-      console.log('It works!')
+      const result: string = "Result here!";
       ~~~
 
-      And here is another:
-
+      B:
       ~~~js
-      console.log('It works again!')
+      var result = "Result here!";
       ~~~
+
+      C:
+      ~~~js
+      String result = "Result here!";
+      ~~~
+
+      D:
+      ~~~js
+      var String = "Result here!";
+      ~~~
+
+  - title: With Flutter being multiplatform, can you develop for Apple OS's on Windows?
+    type: single_choice
+    options:
+      - value: Sure, Flutter takes care of all the building processes no matter what platform you're on.
+      - value: Not quite, you can build Apple apps on Windows, but you can't deploy them via App Store.
+      - value: No, you can't, as XCode is required for any building/deploying apps for Apple systems.
+        correct: true
+
+  - title: What are the two most used IDEs for Flutter development and which one do you prefer? Why?
+    type: full_text
+
+  - title: What is the difference between Stateless and Stateful widgets? For which use cases would you use each of them?
+    type: full_text
+
+  - title: Does Flutter come with a test engine?
+    type: single_choice
+    options:
+      - value: Yes, Flutter has it's own testing engine OOTB.
+        correct: true
+      - value: No, you need to install an external test engine for Dart, such as JEST for Javascript.
