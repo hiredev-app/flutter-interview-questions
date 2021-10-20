@@ -1,72 +1,27 @@
-# [hire.dev] - Interview Questions Template
+![Image header](https://github.com/hiredev-app/flutter-interview-questions/blob/main/image-header.png?raw=true)
 
-This is a template repository you can use to create your own questions
-set of questions compatible with hire.dev platform.
 
-### What to do?
+## Questions
 
-Simply clone this template, modify questions.yaml and make sure it's valid against the schema.
+<details><summary>What even is Flutter?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◉ A framework</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ A plugin</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ An IDE</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ An interface for deploying mobile apps</p><p></p></details>
 
-- Github action will make sure the README.md is regenerated, so that your questions are open source in a nice format
-- In case you use hire.dev, please specify this repository in Questions section of your organisation and import the repo.
+<details><summary>What platforms can you develop for using Flutter?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ iOS</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ Android</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ Apple WatchOS</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ Linux</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ MacOS</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ Windows Phone</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ Web Apps</p><p></p></details>
 
-## Motivation
+<details><summary>What is the building block of every Flutter UI?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ Container</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ States</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◉ Widget</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ Scaffold</p><p></p></details>
 
-At hire.dev, we want to make it possible for a teams to manage their set of interview questions on 
-GitHub in form of a simple YAML file.
+<details><summary>What is MVVM and why do we use it?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ To get rid of excess code</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ To separate UI logic from the UI itself</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ To have less files in repository</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ To increase code clarity and other practical purposes</p><p></p></details>
 
-1. We want team members to actively collaborate on a set of questions that are being asked during the interview process.
-2. We believe the questions are more relevant when being built continuously and naturally while building stuff instead of when they are prepared just for the sake of interview process. 
-3. Possibility to store them in YAML on GitHub gives people an opportunity to collaborate like on any other project. Ask questions, do pull-request reviews, create issues.
-4. The setup of this repo allows for this questions to be either just publicly available on GitHub, or be used as part of hire.dev platform.
+<details><summary>Have you worked with MVVM? Is it good practice to always use it? When is it, and when it isn't?</summary>
+<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
 
-## Schema
+<details><summary>Which of these code snippets is a approved way of creating a string variable?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ A</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ B</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ C</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ D</p><p></p></details>
 
-```
-questions:
-- title: {question_name}
-  type: {full_text,single_choice,multi_choice}
-  options: # available just for single_choice,multi_choice questions
-  - value: {answer_no_1_text}
-    correct: true # only 1 correct answer possible for single_choice questions
-  - value: {answer_no_2_text}
-  hint: # optional hint 
-  body: |
-    Body of the question in Markdown to briefly describe the question more in detail
-    ~~~python
-    # You can even provide code snippets
-    ~~~
-```
+<details><summary>With Flutter being multiplatform, can you develop for Apple OS's on Windows?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ Sure, Flutter takes care of all the building processes no matter what platform you're on.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ Not quite, you can build Apple apps on Windows, but you can't deploy them via App Store.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◉ No, you can't, as XCode is required for any building/deploying apps for Apple systems.</p><p></p></details>
 
-## How does hire.dev question repositories work?
+<details><summary>What are the two most used IDEs for Flutter development and which one do you prefer? Why?</summary>
+<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
 
-```
-                                                                                                      
-                                                                                                      
-                                            +--------------------------------------+                  
-+-------------------+                       |                                      |                  
-|Questions repository -------------------------------+    hire.dev                 |                  
-|no.1               |                       |        |                             |                  
-|                   |  hire.dev pulls       |  +-----|-----+                       |                  
-|+ questions.yaml   |  data from the repo   |  |           |                       |                  
-+-------------------+                       |  |           |                       |                  
-                                            |  |           |                       |                  
-                                            |  | Company's |                       |                  
-                                            |  | question  |    Job Pipeline       |                  
-+-------------------+                       |  | database  |    of a specific      |                  
-|Questions repository--------------------------|           |    interview          |                  
-|no. 2              |                       |  |           |    +-----------------+|                  
-|                   |                       |  +-----|-----+    | Introduction    ||                  
-|+ questions.yaml   |                       |        |          +-----------------+|                  
-+-------------------+                       |        |          +-----------------+|                  
-                                            |        +----------- Questions block ||                  
-                                            |  A subset of      +-----------------+|                  
-                                            |  questions        +-----------------+|                  
-                                            |  is chosen for    | Online meeting  ||                  
-                                            |  each individual  +-----------------+|                  
-                                            |  job type         +-----------------+|                  
-                                            |                   | Final block     ||                  
-                                            |                   +-----------------+|                  
-                                            +--------------------------------------+                  
-                                                                                           
-```
+<details><summary>What is the difference between Stateless and Stateful widgets? For which use cases would you use each of them?</summary>
+<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
+
+<details><summary>Does Flutter come with a test engine?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◉ Yes, Flutter has it's own testing engine OOTB.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ No, you need to install an external test engine for Dart, such as JEST for Javascript.</p><p></p></details>
